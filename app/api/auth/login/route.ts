@@ -24,6 +24,14 @@ export async function POST(req: Request) {
       );
     }
 
+    // User exists but has no password (e.g. OAuth account)
+    if (!user.password) {
+      return NextResponse.json(
+        { message: "This account doesn't have a password. Please sign in using your provider." },
+        { status: 401 }
+      );
+    }
+
     const validPassword = await bcrypt.compare(
       password,
       user.password
@@ -45,7 +53,6 @@ export async function POST(req: Request) {
         email: user.email,
       },
     });
-
   } catch (error) {
     console.error(error);
 
