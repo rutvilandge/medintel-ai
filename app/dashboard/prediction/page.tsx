@@ -45,7 +45,7 @@ export default async function PredictionPage() {
 
         {/* Prediction Form */}
 
-        <PredictionForm patients={patients} />
+        <PredictionForm />
 
         {/* Statistics */}
 
