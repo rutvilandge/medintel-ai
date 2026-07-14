@@ -75,14 +75,14 @@ Doctor: ${report.doctorName ?? "Unknown"}
 
     const text = completion.choices[0]?.message?.content ?? "";
 
-    const summary =
-      text.match(/Summary:(.*?)Abnormalities:/is)?.[1]?.trim() ??
-      "No summary available.";
-
+   const summary =
+  text.match(/Summary:([\s\S]*?)Abnormalities:/i)?.[1]?.trim() ??
+  "No summary available.";
+   
     const abnormalities =
-      text.match(/Abnormalities:(.*?)Recommendations:/is)?.[1]?.trim() ??
-      "None";
-
+  text.match(/Abnormalities:([\s\S]*?)Recommendations:/i)?.[1]?.trim() ??
+  "None";
+   
     const recommendation =
       text.split(/Recommendations:/i)[1]?.trim() ??
       "No recommendation.";
