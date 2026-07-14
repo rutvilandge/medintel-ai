@@ -9,6 +9,17 @@ An intelligent healthcare platform that combines **Artificial Intelligence**, **
 Designed to simplify clinical workflows by helping healthcare professionals upload reports, generate AI-powered insights, predict possible diseases, and interact with a patient-aware AI assistant.
 
 ---
+<div align="center">
+
+# 🚀 Live Demo
+
+### 🌐 **MedIntel AI is Live**
+
+👉 **https://medintel-4cc7g56hu-rutvilandges-projects.vercel.app/**
+
+</div>
+
+---
 
 
 # 📑 Table of Contents
