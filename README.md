@@ -924,22 +924,7 @@ Feel free to use this project for learning and educational purposes.
 
 ---
 
-# 🙏 Acknowledgements
-
-Special thanks to the amazing open-source community and the technologies that made this project possible.
-
-- Next.js
-- React
-- Prisma
-- PostgreSQL
-- Neon
-- Groq AI
-- Cloudinary
-- Tailwind CSS
-- Lucide React
-- Vercel
-
----
+#
 
 <div align="center">
 
